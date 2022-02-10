@@ -15,7 +15,7 @@
         webchat: {
           transport: {
             type: 'purecloud-v2-sockets',
-            dataURL: 'https://api.mypurecloud.com',
+            dataURL: 'https://api.usw2.pure.cloud.com',
             deploymentKey : 'd3b68eb9-8bb9-447d-9bb6-17d3dce4379c',
             orgGuid : 'ea72bebb-047a-475e-bb3d-5460b65bc2e5',
             interactionData: {
