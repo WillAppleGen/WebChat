@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: black;
-    text: white;
+    background: rgba(0,0,255,0.3);
+    text: black;
     text-align: center;
 }
