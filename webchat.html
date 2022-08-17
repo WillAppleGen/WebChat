@@ -22,17 +22,23 @@
 			transport: {
 				type: "purecloud-v2-sockets",
 				dataURL: "https://api.usw2.pure.cloud",
-				deploymentKey: "35fa780d-122e-4798-a86c-ce10980ce411",
-				orgGuid: "a90e4554-e3ff-48cd-9f31-ee3bfecf4ec3",
-				interactionData: {
+				//wappledev
+				//deploymentKey: "35fa780d-122e-4798-a86c-ce10980ce411",
+				//orgGuid: "a90e4554-e3ff-48cd-9f31-ee3bfecf4ec3",
+				//Safe Horizon
+				deploymentKey: "5cc8894d-cbe7-4fb9-b74d-359706e2c987",
+				orgGuid: "15d5b9bc-d901-4d0f-8a9f-8d02a4b0a031",
+
+				/*interactionData: {
 					routing: {
 						targetType: "QUEUE",
 						targetAddress: "Soot Sprites",
 						priority: 2
 					}
-				}
+				}*/
 			},
-			userData: {
+//wappledev
+			/*userData: {
 			addressStreet: "7668 Sergi Canyon Dr",
 			addressCity: "Indianapolis",
 			addressPostalCode: "46217",
@@ -44,7 +50,19 @@
 			// firstName: 'Praenomen',
 			// lastName: 'Gens',
 			// email: 'praenomen.gens@calidumlitterae.com',
-			// subject: 'Chat subject'
+			// subject: 'Chat subject'*/
+			"userData": {
+                            "addressStreet": "",
+                            "addressCity": "",
+                            "addressPostalCode": "",
+                            "addressState": "",
+                            "phoneNumber": "",
+                            "customField1Label": "Country Code",
+                            "customField1": country,
+                            "customField2Label": "SafeChat Email/Phone",
+                            "customField2": "",
+                            "customField3Label": "First Time Using SafeChat",
+                            "customField3": ""
 			}	
 		}
 	}		
