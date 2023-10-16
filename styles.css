@@ -1,6 +1,11 @@
 body {
     margin: 0;
-    background: rgba(0,0,255,0.3);
-    text: black;
+    background: rgba(255,255,255,0.3);
     text-align: center;
+    text-color-normal: hsl(210, 10%, 62%);
+    text-color-light: hsl(210, 15%, 35%);
+    text-color-richer: hsl(210, 50%, 72%);
+    text-color-highlight: hsl(25, 70%, 45%);
 }
+
+
