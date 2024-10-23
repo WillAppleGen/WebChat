@@ -33,6 +33,9 @@
 <script type="text/javascript" charset="utf-8">
   Genesys("subscribe", "Launcher.ready" , function(o){
     console.log("The queue works!");
+ Genesys("subscribe", "Messenger.closed", function(o){
+    console.log("Messenger Closed Event");
+ Genesys("command", "Messenger.clear");						      
   });
 </script>	
 	 
