@@ -7,21 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-    <ul>
-		<li> <a href="index.html">Genesys Test Site Home Page</a> </li>
-	</ul>
-<body>
-<script type="text/javascript" charset="utf-8">
- Genesys("subscribe", "Messenger.ready", function(o){
-	console.log("Messenger ready event");
- Genesys("command", "Messenger.clear");	 
- Genesys("subscribe", "Messenger.cleared", function(o){
-	console.log("Messenger cleared event");	 
-});	
-</script>
-
-</script>	
-    <h1>Josh Web Messaging Test</h1>
 <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
@@ -36,8 +21,20 @@
     deploymentId: 'a0870594-d59f-4e37-b37c-08879e652baf',
     debug: true, 
 });
+</script>	
+    <ul>
+		<li> <a href="index.html">Genesys Test Site Home Page</a> </li>
+	</ul>
+<body>
+<h1>Josh Web Messaging Test</h1>	
+<script type="text/javascript" charset="utf-8">
+ Genesys("subscribe", "Messenger.ready", function(o){
+	console.log("Messenger ready event");
+ Genesys("command", "Messenger.clear");	 
+ Genesys("subscribe", "Messenger.cleared", function(o){
+	console.log("Messenger cleared event");	 
+});	
 </script>
-
 </body>
 </html>
 
