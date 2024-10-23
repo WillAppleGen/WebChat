@@ -29,9 +29,9 @@
 </script>
 
 </body>
-Genesys("subscribe", "Messenger.ready", function(){console.log("Messenger Ready Event");
-Genesys("subscribe", "Messenger.cleared", function(){console.log("Messenger Closed Event");
-Genesys("command", "Messenger.clear");	
-});
-	
+
+<script>
+Genesys("command", "Messenger.clear");		
+</script>
+
 </html>
