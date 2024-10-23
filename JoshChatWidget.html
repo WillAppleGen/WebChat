@@ -25,8 +25,8 @@
     environment: 'prod-usw2',
     deploymentId: 'a0870594-d59f-4e37-b37c-08879e652baf',
     debug: true,
-    Genesys("subscribe", "Messenger.ready", function() {console.log("Messenger Ready Event"});	 
-    Genesys("subscribe", "Messenger.closed", function(){console.log("Messenger Closed"});
+    Genesys("subscribe", "Messenger.ready", function(){});	 
+    Genesys("subscribe", "Messenger.closed", function(){});
     Genesys("command", "Messenger.clear");
   });
 </script>
