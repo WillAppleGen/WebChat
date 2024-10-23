@@ -31,12 +31,12 @@
 </body>
 </html>
 <script type="text/javascript" charset="utf-8">
-  Genesys("subscribe", "Launcher.ready" , function(o){
-    console.log("The queue works!");
-  });
-Genesys("subscribe", "Messenger.ready", function(o){
+ Genesys("subscribe", "Messenger.ready", function(o){
 	console.log("Messenger ready event");
 });	
 Genesys("command", "Messenger.clear");	
+Genesys("subscribe", "Messenger.cleared", function(o){
+	console.log("Messenger cleared event");
+});	
 </script>
 	 
