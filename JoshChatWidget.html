@@ -11,6 +11,18 @@
 		<li> <a href="index.html">Genesys Test Site Home Page</a> </li>
 	</ul>
 <body>
+<script type="text/javascript" charset="utf-8">
+ Genesys("subscribe", "Messenger.ready", function(o){
+	console.log("Messenger ready event");
+ Genesys("command", "Messenger.clear");	 
+});	
+</script>
+
+<script type="text/javascript" charset="utf-8">
+Genesys("subscribe", "Messenger.cleared", function(o){
+	console.log("Messenger cleared event");
+});	
+</script>	
     <h1>Josh Web Messaging Test</h1>
 <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
@@ -30,16 +42,5 @@
 
 </body>
 </html>
-<script type="text/javascript" charset="utf-8">
- Genesys("subscribe", "Messenger.ready", function(o){
-	console.log("Messenger ready event");
- Genesys("command", "Messenger.clear");	 
-});	
-</script>
 
-<script type="text/javascript" charset="utf-8">
-Genesys("subscribe", "Messenger.cleared", function(o){
-	console.log("Messenger cleared event");
-});	
-</script>
 	 
