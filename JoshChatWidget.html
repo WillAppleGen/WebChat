@@ -33,11 +33,11 @@
 <script type="text/javascript" charset="utf-8">
  Genesys("subscribe", "Messenger.ready", function(o){
 	console.log("Messenger ready event");
+ Genesys("command", "Messenger.clear");	 
 });	
 </script>
 
 <script type="text/javascript" charset="utf-8">
-Genesys("command", "Messenger.clear");	
 Genesys("subscribe", "Messenger.cleared", function(o){
 	console.log("Messenger cleared event");
 });	
