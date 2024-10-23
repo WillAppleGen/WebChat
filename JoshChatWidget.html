@@ -27,5 +27,10 @@
     debug: true,
 });
 </script>
+Genesys('subscribe', 'Messenger.opened', function() {
+console.log("Messenger: opended event");	
+Genesys("subscribe", "Messenger.closed", function(){
+console.log("Messenger: closed event");	
+Genesys("command", "Messenger.clear");	
 </body>
 </html>
